@@ -1,0 +1,36 @@
+////
+A https://revealjs.com/ presentation with https://asciidoctor.org/ markup.
+
+Converted with https://docs.asciidoctor.org/reveal.js-converter/latest/. Specifically
+https://docs.asciidoctor.org/reveal.js-converter/latest/setup/node-js-setup/.
+
+For the impatient:
+
+`$ git submodule update --init`
+`$ npm install`
+
+and then to perform a conversion.
+
+`$ npx asciidoctor-revealjs react-juce.adoc`
+
+For a good example of a presentation using this, see https://github.com/bentolor/java9to13.`
+
+////
+= Adventures with React and JUCE
+:backend: revealjs
+:revealjs_theme: black
+:revealjs_controls: false
+:revealjs_slideNumber: true
+:revealjs_showSlideNumber: speaker
+:imagesdir: images
+:figure-caption!:
+// :customcss: minspace.css
+
+== Doing UI with Typescript in a C++ application
+
+Jim Hague +
+http://www.inmusic.com[InMusic] +
+mailto:jim.hague@acm.org[jim.hague@acm.org] +
+https://https://fosstodon.org/@banburybill[@banburybill@fosstodon.org] +
+https://twitter.com/banbury_bill[@banbury_bill] +
+https://github.com/banburybill

@@ -34,3 +34,5 @@ mailto:jim.hague@acm.org[jim.hague@acm.org] +
 https://https://fosstodon.org/@banburybill[@banburybill@fosstodon.org] +
 https://twitter.com/banbury_bill[@banbury_bill] +
 https://github.com/banburybill
+
+include::react-juce-intro.adoc[]

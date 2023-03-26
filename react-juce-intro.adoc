@@ -1,0 +1,28 @@
+== Agenda
+
+. What is React-JUCE?
+. How does it work?
+. The Good Parts
+. The Less Good Parts
+
+[.notes]
+--
+For a room of the average unwashed C++ programmer, there's a bit of explaining to do here.
+
+This is the hand-wavey 30,000ft (FL300) view of what I'm going to talk about.
+
+But that first item is doing a LOT of heavy lifting.
+--
+[%notitle]
+=== More agenda
+
+. What is React-JUCE?
+** What is JUCE?
+** What is React?
+** OK, so what is React-JUCE?
+** OK, WHY?
+
+[.notes]
+--
+So you're not getting away lightly here.
+--

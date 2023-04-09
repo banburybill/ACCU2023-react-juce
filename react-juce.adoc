@@ -16,6 +16,7 @@ and then to perform a conversion.
 For a good example of a presentation using this, see https://github.com/bentolor/java9to13.`
 
 ////
+
 = Adventures with React and JUCE
 :backend: revealjs
 :revealjs_theme: black
@@ -25,6 +26,12 @@ For a good example of a presentation using this, see https://github.com/bentolor
 :imagesdir: images
 :figure-caption!:
 // :customcss: minspace.css
+
+[%notitle]
+
+== Cover page
+
+image::cover.png[background,size="100%,100%"]
 
 == Doing UI with Typescript in a C++ application
 

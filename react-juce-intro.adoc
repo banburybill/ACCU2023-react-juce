@@ -17,8 +17,8 @@ But that first item is doing a LOT of heavy lifting.
 === More agenda
 
 . What is React-JUCE?
-** What is JUCE?
 ** What is React?
+** What is JUCE?
 ** OK, so what is React-JUCE?
 ** OK, WHY?
 

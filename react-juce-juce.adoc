@@ -9,6 +9,8 @@ image::juce.png[background,size="100% 100%"]
 OK, so I've been living in a backwater. JUCE is the most significant
 C++ open source library I'd never heard of before.
 
+First released in 2004 by Julian Storer.
+
 JUCE is the most widely used framework for audio application and
 plug-in development. It is an open source C++ codebase that can be
 used to create standalone software on Windows, macOS, Linux, iOS and

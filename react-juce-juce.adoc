@@ -1,0 +1,87 @@
+[%notitle]
+
+== JUCE
+
+image::juce.png[background,size="100% 100%"]
+
+[.notes]
+--
+OK, so I've been living in a backwater. JUCE is the most significant
+C++ open source library I'd never heard of before.
+
+JUCE is the most widely used framework for audio application and
+plug-in development. It is an open source C++ codebase that can be
+used to create standalone software on Windows, macOS, Linux, iOS and
+Android, as well VST, VST3, AU, AUv3, AAX and LV2 plug-ins.
+
+Commercial or GPLv3 licenced.
+--
+
+[%notitle]
+
+== Who uses JUCE?
+
+image::using_juce.png[background,size="100% 100%"]
+
+[.notes]
+--
+From the JUCE website. A list of commerical organisations using JUCE.
+
+Not far off a Who's Who of the audio business.
+--
+
+[%notitle]
+
+== JUCE classes
+
+image::juce_class_index.png[background,size="100% 100%"]
+
+[.notes]
+--
+This isn't an in-depth intro to JUCE as a whole. Here's a look at the range
+of classes available in JUCE.
+
+Note there are sections GUI and Graphics. Yes, JUCE contains a *cross-platform* GUI toolkit.
+On desktop this lets you write code that runs on Windows, Mac and Linux X11/Linux framebuffer.
+--
+
+== JUCE GUI
+
+....
+void paint (juce::Graphics& g)
+{
+    g.fillAll (juce::Colours::lightblue);
+
+    g.setColour (juce::Colours::darkblue);
+    juce::Font mainComponentFont ("Times New Roman", 20.0f, juce::Font::italic);
+    g.setFont (mainComponentFont);
+    g.drawText ("Hello, World!", 20, 40, 200, 40, juce::Justification::centred, true);
+
+    g.setColour (juce::Colours::green);
+    g.drawLine (10, 300, 590, 300, 5);
+
+    juce::Rectangle<float> house (300, 120, 200, 170);
+    g.fillCheckerBoard (house, 30, 10, juce::Colours::sandybrown, juce::Colours::saddlebrown);
+    g.setColour (juce::Colours::yellow);
+    g.drawEllipse (getWidth() - 70, 10, 60, 60, 3);
+    g.setColour (juce::Colours::red);
+
+    Path roof;
+    roof.addTriangle (300, 110, 500, 110, 400, 70);
+    g.fillPath (roof);
+}
+....
+
+[.notes]
+--
+JUCE GUI classes are a traditional old-skool style of C++ GUI programming.
+--
+
+== JUCE GUI sample
+
+image::juce_graphics_tutorial.png[]
+
+[.notes]
+--
+Result of above example.
+--

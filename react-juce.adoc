@@ -20,11 +20,16 @@ For a good example of a presentation using this, see https://github.com/bentolor
 = Adventures with React and JUCE
 :backend: revealjs
 :revealjs_theme: black
+:revealjs_width: "100%"
+:revealjs_height: "100%"
+:revealjs_hash: true
+:revealjs_margin: 0.02
 :revealjs_controls: false
 :revealjs_slideNumber: true
 :revealjs_showSlideNumber: speaker
 :imagesdir: images
 :figure-caption!:
+:source-highlighter: highlight.js
 // :customcss: minspace.css
 
 [%notitle]

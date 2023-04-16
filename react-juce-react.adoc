@@ -1,0 +1,226 @@
+[%notitle]
+
+== React
+
+image::react-icon.svg[background,size="100% 100%"]
+
+[.notes]
+--
+React is a free and open-source front-end JavaScript library for
+building user interfaces based on components.
+
+It's not an application library. React is UI only.
+
+First public release July 2013, but first used in 2011.
+
+Development hosted in GitHUb. MIT licenced.
+--
+
+== We're not in Kansas any more
+
+image::pcw-tlo.gif[]
+
+[.notes]
+--
+A magazine cover from February 1981 where the feature article was
+about how computers would soon be writing programs themselves and
+programmers would be redundant. Plus ça change...
+
+ACCU regulars will wonder if Roger Orr posed for the picture.
+--
+
+[%notitle]
+== Break the internet
+[source,javascript]
+....
+modules.exports = leftpad;
+function leftpad(str, len, ch) {
+  str = String(str);
+  var i = -1;
+  if (!ch && ch !== 0) ch = ' ';
+  len = len - str(length);
+  while (++i < len) {
+    str  = ch + str;
+  }
+  return str;
+}
+....
+
+[.notes]
+--
+Dunno about you, but for this long-time
+C/C++/Python/bash/Java etc. dev, this webby stuff is a Whole New
+World. Populated by people who need a 11 line library function
+downloaded from an online rope to left pad strings, the widthdrawl of
+which (2016) breaks a shedload of websites. Breakage
+includes ... React.
+
+If you've not come across JS before, curbralan habitues will be
+puzzled by !== (basically not-screwed-up !=). Modern JS (ES6) prefers
+let to var. Note. I will in the rest of this ramble be talking about
+ES6 when I refer to JS. Also, I'm not going to attempt to teach JS
+and/or Typescript. Or React. I just want to give a flavour.
+--
+
+[%notitle]
+== React Hello World
+[source,javascript]
+....
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const Greeting = () => {
+    return (
+        <div className="hello-world">
+            <h1>Hello, world!</h1>
+        </div>
+    );
+};
+
+const App = () => {
+    return <Greeting />;
+};
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
+....
+
+[.notes]
+--
+Hello, World for React.
+
+Greeting is a functional component.  There's actually a bit more
+boilerplate code for the enclosing HTML page.
+--
+
+== Component properties
+[source,javascript]
+....
+const Greeting = (props) => {
+    return (
+        <div className="hello-world">
+            <h1>Hello,  { props.name }!</h1>
+        </div>
+    );
+};
+
+const App = () => {
+    return <Greeting name="there"/>;
+};
+....
+
+[.notes]
+--
+You can parameterise components using properties (props).
+
+When the property changes, the component *and all its children* will re-render.
+--
+
+== Component state
+[source,javascript]
+....
+function FavoriteColor() {
+  const [color, setColor] = useState("red");
+
+  return (
+    <>
+      <h1>My favorite color is {color}!</h1>
+      <button
+        type="button"
+        onClick={() => setColor("blue")}
+      >Blue</button>
+    </>
+  )
+}
+....
+
+[.notes]
+--
+Component also refresh when their *state* changes.
+
+So React is react-ive. You don't worry about needing to command
+repaints. React will automatically update when the data commands so.
+--
+
+== ReactDOM?
+[source,javascript]
+....
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const Greeting = () => {
+    return (
+        <div className="hello-world">
+            <h1>Hello, world!</h1>
+        </div>
+    );
+};
+....
+
+[.notes]
+--
+Going back to our Hello World for a moment.  One important thing to
+notice here is the react-dom stuff. DOM==HTML/CSS Domain Object
+Model. As is obvious from the <div> <h1>, we're firmly in HTML (and
+CSS) land here.
+
+So why is React a separate library from ReactDOM?
+--
+
+== React Native
+
+* A framework for native UI for applications.
+** Android,  Android TV,  iOS, MacOS, tvOS, Web(!), Windows, Universal Windows Platform (UWP)
+* Used for Android & iOS apps at Facebook, Microsoft, Shopify.
+
+[.notes]
+--
+React Native, a framework for writing native applications deputed in
+2015.
+--
+
+== React Native example
+[source,javascript]
+....
+import React from 'react';
+import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+
+const App = () => {
+  return (
+    <ScrollView>
+      <Text>Some text</Text>
+      <View>
+        <Text>Some more text</Text>
+        <Image
+          source={{
+            uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
+          }}
+          style={{width: 200, height: 200}}
+        />
+      </View>
+      <TextInput
+        style={{
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 1,
+        }}
+        defaultValue="You can type in me"
+      />
+    </ScrollView>
+....
+
+[.notes]
+--
+This LOOKs HTML/CSS like, with HTML style XML components and CSS type
+styling, but in fact contains neither. Each item is a native
+component. These native components are, though, arranged in a
+parent-child hierarchy, just as in ReactDOM.
+
+The crucial point here is that React Native uses exactly the same
+React module as ReactDOM, but a completely different back end.
+--

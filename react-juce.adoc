@@ -48,4 +48,5 @@ https://twitter.com/banbury_bill[@banbury_bill] +
 https://github.com/banburybill
 
 include::react-juce-intro.adoc[]
+include::react-juce-react.adoc[]
 include::react-juce-juce.adoc[]

@@ -16,7 +16,7 @@ plug-in development. It is an open source C++ codebase that can be
 used to create standalone software on Windows, macOS, Linux, iOS and
 Android, as well VST, VST3, AU, AUv3, AAX and LV2 plug-ins.
 
-Commercial or GPLv3 licenced.
+Development hosted in GitHUb. Commercial or GPLv3 licenced.
 --
 
 [%notitle]

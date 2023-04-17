@@ -99,6 +99,38 @@ Greeting is a functional component.  There's actually a bit more
 boilerplate code for the enclosing HTML page.
 --
 
+== JSX
+
+[source,javascript]
+....
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+....
+
+[source,javascript]
+....
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+....
+
+[.notes]
+--
+JSX is a JavaScript syntax extension. It produces React elements.
+JSX tags can include children.
+
+Note `className` in the above. React DOM uses `camelCase` for its
+property names as it's closer to JS that HTML. Here, the HTML
+attribute name `class` can't be used as it's a JS reserved word, so
+`className` is used instead.
+--
+
+
 == Component properties
 [source,javascript]
 ....
@@ -118,6 +150,8 @@ const App = () => {
 [.notes]
 --
 You can parameterise components using properties (props).
+
+Note the next little bit of JSX. Items in {} are subsitituted. You can use any valid JS.
 
 When the property changes, the component *and all its children* will re-render.
 --

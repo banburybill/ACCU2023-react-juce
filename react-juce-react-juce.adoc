@@ -1,0 +1,58 @@
+[%notitle]
+== React-JUCE
+
+image::react-juce.png[]
+
+
+[.notes]
+--
+So finally we get to React-JUCE.
+
+Originally released in 2019 under the name Blueprint by Nick Thompson.
+Maintainer now Josh Marler.
+
+Development hosted in GitHUb. MIT licenced.
+--
+
+[%notitle]
+== Hermes
+
+image::hermes.png[]
+
+
+[.notes]
+--
+Being a JS based thing (well, the React part, anyway), it obviously
+needs a JavaScript engine. It was originally written to use DukTape,
+but we are using Hermes.
+
+Hermes comes from Facebook, and is now the default JS engine for React
+Native. It's designed for mobile devices and for fast startup.
+
+Hermes compiles JS to a bytecode and then interprets that
+bytecode. Significantly, it's *not* a JITing system. Compiling can be
+ahead of time, reducing startup time and memory usage. It includes a
+concurrent GC.
+
+I'm guessing the lack of native code JIT is down to wanting to keep
+memory footprint small (though I did work on a low-memory JITing JVM
+20 years ago). It may also have something to do with Apple's ban on
+native code generation (and unhappiness about GC) for App Store.
+
+Development hosted in GitHUb. MIT licenced.
+--
+
+[%notitle]
+== Yoga
+
+image::yoga.png[]
+
+
+[.notes]
+--
+The other major sub-component of React Native is also used in React Native.
+
+Yoga is a Flexbox layout engine. And guess what, it's also a Facebook Open Source component.
+
+Development hosted in GitHUb. MIT licenced.
+--

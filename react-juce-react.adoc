@@ -16,9 +16,10 @@ First public release July 2013, but first used in 2011.
 Development hosted in GitHUb. MIT licenced.
 --
 
+[%notitle]
 == We're not in Kansas any more
 
-image::pcw-tlo.gif[]
+image::pcw-tlo.jpg[alt="Computers will write their own code",width="40%",height="100%"]
 
 [.notes]
 --

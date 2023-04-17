@@ -176,7 +176,10 @@ So why is React a separate library from ReactDOM?
 == React Native
 
 * A framework for native UI for applications.
-** Android,  Android TV,  iOS, MacOS, tvOS, Web(!), Windows, Universal Windows Platform (UWP)
+** Android,  Android TV
+** iOS, MacOS
+** tvOS, Web(!)
+** Windows - Universal Windows Platform (UWP)
 * Used for Android & iOS apps at Facebook, Microsoft, Shopify.
 
 [.notes]

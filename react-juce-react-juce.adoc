@@ -56,3 +56,14 @@ Yoga is a Flexbox layout engine. And guess what, it's also a Facebook Open Sourc
 
 Development hosted in GitHUb. MIT licenced.
 --
+
+== Demo time
+
+[.notes]
+--
+Time to see RJ in action. I had hoped to be showing something of what we've been working
+on, but it's not released yet so I have to fall back in the RJ examples. Of which there is one.
+Which at least means I don't have to think too hard about which example to pick.
+
+So, _show the example app in action_.
+--

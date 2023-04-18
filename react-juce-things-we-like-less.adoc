@@ -1,0 +1,23 @@
+== Things we like less about React JUCE
+
+[.step]
+* Getting up to speed with:
+** Javascript
+** Typescript
+** React
+** mobx
+* Speed
+
+[.notes]
+--
+Dear departed Hubert always used to say that if you introduced a new
+language or framework into a project, his rule of thumb was that you
+added 18 months to that project.
+
+We can quibble about the time, but the point stands.
+
+I've had a few React people say to me that speed isn't really a thing
+in the ReactDOM world. On a desktop browser, these day you have a
+beefy JITting JS engine that goes like stink. Hermes is good, but not
+that good.
+--

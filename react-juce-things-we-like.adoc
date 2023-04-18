@@ -1,0 +1,10 @@
+== Things we like about React JUCE
+
+[.step]
+* Building UIs declaratively with a flexbox layout engine.
+* Hot reload!
+
+[.notes]
+--
+
+--

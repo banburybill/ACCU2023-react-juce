@@ -1,10 +1,13 @@
 == Things we like about React JUCE
 
 [.step]
+* JUCE!
 * Building UIs declaratively with a flexbox layout engine.
+* Using native code JUCE components.
 * Hot reload!
 
 [.notes]
 --
-
+We have a large C++ codebase using JUCE. Being able to use our own native code JUCE
+components when we need performance is... very useful.
 --

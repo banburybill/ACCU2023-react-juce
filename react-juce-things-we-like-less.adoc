@@ -1,12 +1,10 @@
 == Things we like less about React JUCE
 
 [.step]
-* Getting up to speed with:
-** Javascript
-** Typescript
-** React
-** mobx
-* Speed
+* Getting up to speed with Javascript.
+* Getting up to speed with Typescript.
+* Getting up to speed with React.
+* Getting up to speed with mobx.
 
 [.notes]
 --

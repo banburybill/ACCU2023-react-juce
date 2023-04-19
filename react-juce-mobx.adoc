@@ -1,0 +1,21 @@
+[%notitle]
+== Mobx
+
+image::mobx.png[background,size="100%,100%"]
+
+[.notes]
+--
+mobx is an open-source state management tool.
+
+Development hosted in GitHUb. MIT licenced.
+--
+
+== What is Mobx?
+
+* A simple, scalable state management library.
+* Prevents inconsistent state by ensuring that all derivations are performed automatically.
+* "MobX makes state management simple again by addressing the root issue: it makes it impossible to produce an inconsistent state."
+
+[.notes]
+--
+--

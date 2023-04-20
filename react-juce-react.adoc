@@ -32,7 +32,7 @@ ACCU regulars will wonder if Roger Orr posed for the picture.
 
 [%notitle]
 == Break the internet
-[source,javascript]
+[.stretch]
 ....
 modules.exports = leftpad;
 function leftpad(str, len, ch) {
@@ -101,7 +101,6 @@ boilerplate code for the enclosing HTML page.
 
 == JSX
 
-[source,javascript]
 ....
 const element = (
   <h1 className="greeting">
@@ -110,7 +109,6 @@ const element = (
 );
 ....
 
-[source,javascript]
 ....
 const element = React.createElement(
   'h1',
@@ -132,7 +130,7 @@ attribute name `class` can't be used as it's a JS reserved word, so
 
 
 == Component properties
-[source,javascript]
+[.stretch]
 ....
 const Greeting = (props) => {
     return (
@@ -157,7 +155,7 @@ When the property changes, the component *and all its children* will re-render.
 --
 
 == Component state
-[source,javascript]
+[.stretch]
 ....
 function FavoriteColor() {
   const [color, setColor] = useState("red");
@@ -184,7 +182,7 @@ repaints. React will automatically update when the data commands so.
 
 == React rendering
 
-[source,javascript]
+[.stretch]
 ....
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -215,7 +213,7 @@ We'll see a bit more of the reconciler later.
 --
 
 == ReactDOM?
-[source,javascript]
+[.stretch]
 ....
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -255,7 +253,7 @@ React Native, a framework for writing native applications deputed in
 --
 
 == React Native example
-[source,javascript]
+[.stretch]
 ....
 import React from 'react';
 import {View, Text, Image, ScrollView, TextInput} from 'react-native';

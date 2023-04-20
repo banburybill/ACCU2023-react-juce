@@ -193,3 +193,30 @@ NativeMethods.js. And EventBridge.js.
 
 EventEmitter is a JS module. Obtained from npm.
 --
+
+== Looking at components
+
+[.notes]
+--
+View.js, View.h, View.cpp
+
+Let's have a look at a couple of components under the bonnet.
+
+Note that View introduces a set of properties.
+
+In implementation, look at mouse event handling and explain onMeasure.
+
+If anyone asks, show Backend.js and dispatchViewEvent handling.
+--
+
+== Canvas component
+
+[.notes]
+--
+Canvas.js/.h/.cpp
+
+Builds a list of draw commands to execute on paints.
+
+Mention you can add your own components - have React.createElement()
+wrap a C++ JUCE component of your own devising..
+--

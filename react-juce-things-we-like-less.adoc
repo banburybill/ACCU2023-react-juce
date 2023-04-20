@@ -5,6 +5,9 @@
 * Getting up to speed with Typescript.
 * Getting up to speed with React.
 * Getting up to speed with mobx.
+* So, Time.
+* Speed.
+* The tide went out.
 
 [.notes]
 --
@@ -18,4 +21,8 @@ I've had a few React people say to me that speed isn't really a thing
 in the ReactDOM world. On a desktop browser, these day you have a
 beefy JITting JS engine that goes like stink. Hermes is good, but not
 that good.
+
+And finally, RJ is not exactly under active development. However, it's
+there and is works. If your niche is needing a declarative UI for
+JUCE, you are not overburdened with choices.
 --

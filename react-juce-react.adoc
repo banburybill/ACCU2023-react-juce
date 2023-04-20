@@ -63,9 +63,21 @@ ES6 when I refer to JS. Also, I'm not going to attempt to teach JS
 and/or Typescript. Or React. I just want to give a flavour.
 --
 
+== But, but, Jim! React!?
+
+For the love of $DEITY, why?
+
+[.notes]
+--
+Look, what where you thinking? I mean, JavaScript? Why?
+
+Because (a) non-declarative UI is a pain, and (b) the compile-link cycle's too long.
+--
+
+
 [%notitle]
 == React Hello World
-[source,javascript]
+[.stretch]
 ....
 import React from 'react';
 import ReactDOM from 'react-dom/client';

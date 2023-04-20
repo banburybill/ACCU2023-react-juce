@@ -1,9 +1,26 @@
+[%notitle]
+== This is not a sermon
+
+image::moses-tablets.jpeg[]
+
+[.notes]
+--
+This talk is NOT divine wisdom delivered to a hushed group of penitents.
+
+It's about the whys and wherefores of mixing programming languages in
+a single executable and why you might do it. I'm hoping that you'll be
+able to share similar stories to me.
+--
+
 == Agenda
 
-. What is React-JUCE?
-. How does it work?
-. The Good Parts
-. The Less Good Parts
+* What is React-JUCE?
+** What is JUCE?
+** What is React?
+** OK, so what is React-JUCE?
+* How does it work?
+* The Good Parts
+* The Less Good Parts
 
 [.notes]
 --
@@ -12,17 +29,8 @@ For a room of the average unwashed C++ programmer, there's a bit of explaining t
 This is the hand-wavey 30,000ft (FL300) view of what I'm going to talk about.
 
 But that first item is doing a LOT of heavy lifting.
---
-[%notitle]
-=== More agenda
 
-. What is React-JUCE?
-** What is React?
-** What is JUCE?
-** OK, so what is React-JUCE?
-** OK, WHY?
-
-[.notes]
---
-So you're not getting away lightly here.
+Should one described JUCE before React? Nice question. I'm going this
+way round because JUCE is a C++ thing that will be more familiar, and
+so there is much less to say about it.
 --

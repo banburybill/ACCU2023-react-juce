@@ -48,9 +48,12 @@ https://twitter.com/banbury_bill[@banbury_bill] +
 https://github.com/banburybill
 
 include::react-juce-intro.adoc[]
-include::react-juce-react.adoc[]
 include::react-juce-juce.adoc[]
+include::react-juce-react.adoc[]
 include::react-juce-react-juce.adoc[]
 include::react-juce-mobx.adoc[]
 include::react-juce-things-we-like.adoc[]
 include::react-juce-things-we-like-less.adoc[]
+
+== The End
+Thank you all for listening and contributing.

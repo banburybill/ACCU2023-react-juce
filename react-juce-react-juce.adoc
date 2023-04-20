@@ -67,3 +67,109 @@ Which at least means I don't have to think too hard about which example to pick.
 
 So, _show the example app in action_.
 --
+
+== Why's it look like that?
+
+[.notes]
+--
+The example program has a single C++ module. It relies on JUCE's
+AudioProcessor class, which provides a plugin and hosting environment,
+and just requires the app to specify an editor.
+
+Let's look first at the React code that specifies the display.
+
+App.js
+--
+
+== How does that meter work?
+
+[.notes]
+--
+Meter.js
+
+Look at how the meter is drawn. Explain about onMeasure.
+
+Where does that gainPeakValues event come from?
+--
+
+== Back in C++ land
+
+[.notes]
+--
+PluginProcessor.cpp. And PluginProgressor.h.
+
+Uses JUCE's AudioProcessor setup to make the plugin. And provide the standalone host.
+
+Look, there's the event being sent. But what's that code above? GenericEditor?
+And this is the only C++ module. Looks like that's how the UI gets started?
+--
+
+== Let's dive a bit further
+
+[.notes]
+--
+GenericEditor.h, GenericEditor.cpp.
+
+Check out the constructor. What's that harness doing?
+--
+
+== The app harness
+
+[.notes]
+--
+AppHarness.h, AppHarness.cpp.
+
+handleFilesChanged()
+--
+
+== All roads lead back to appRoot
+
+[.notes]
+--
+ReactApplicationRoot.h, .cpp.
+
+Let's look at evaluate().
+--
+
+== A first look at the engine
+
+[.notes]
+--
+EmacsEngine.h, _Hermes.cpp.
+
+Let's look at evaluate().
+
+So here we are diving into the engine. Note the result return and the
+conversion from Hermes variable type to/from JUCE variants.
+
+So that's how it all gets off the group and returns control to the
+JUCE event loop. How do events get handled?
+--
+
+== Sending events from the application
+
+[.notes]
+--
+PluginProcessor.cpp. Timer callback.
+
+Back in ReactApplicationRoot.h, what's happening in dispatchEvent?
+It's calling invoke on the engine.
+--
+
+== Invoking a function
+
+[.notes]
+--
+EmacsEngine_Hermes..cpp. invoke.
+
+Fishing the function out of the JS data, and call it. Convert the arguments and return.
+--
+
+== OK, where is JS dispatchEvent?
+
+[.notes]
+--
+NativeMethods.js. And EventBridge.js.
+
+EventEmitter is a JS module. Obtained from npm.
+--

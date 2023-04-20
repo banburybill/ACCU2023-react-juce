@@ -225,7 +225,15 @@ const Greeting = () => {
 So, React runs this function every time the data changes. Doesn't that
 mean that every time the data changes everything re-renders? And what
 happens if you're doing a text input or something?
+--
 
+
+== Virtual DOM
+
+image::reconciler.png[width="50%"]
+
+[.notes]
+--
 What React does is re-render on each change, but the re-render
 generates a *virtual* DOM, an intermediate representation of how stuff
 should look. Once that is done, the *reconciler* triggers. This checks

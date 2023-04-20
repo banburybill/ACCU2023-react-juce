@@ -14,6 +14,26 @@ Maintainer now Josh Marler.
 Development hosted in GitHUb. MIT licenced.
 --
 
+== React-JUCE components
+
+* View
+* Canvas
+* ScrollView
+* ListView
+* Text
+* TextInput
+* Image
+* Button
+* Slider
+
+[.notes]
+--
+We're in territory similar to React Native here. But JUCE underpinnings are assumed,
+and the JUCE event loop is in charge.
+
+There are also a different and much restricted set of components available.
+--
+
 [%notitle]
 == Hermes
 

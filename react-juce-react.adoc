@@ -71,7 +71,19 @@ For the love of $DEITY, why?
 --
 Look, what where you thinking? I mean, JavaScript? Why?
 
-Because (a) non-declarative UI is a pain, and (b) the compile-link cycle's too long.
+There are reasons.
+--
+
+== Why React?
+
+[.step]
+* Declarative UI.
+* Avoid long compile-link cycle.
+* Because It's There.
+
+[.notes]
+--
+Qt with QML shows the value of JS CSS-like UI layout.
 --
 
 

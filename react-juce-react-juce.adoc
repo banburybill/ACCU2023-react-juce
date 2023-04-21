@@ -219,3 +219,14 @@ Builds a list of draw commands to execute on paints.
 Mention you can add your own components - have React.createElement()
 wrap a C++ JUCE component of your own devising..
 --
+
+== The reconciler backend
+
+[.notes]
+--
+Renderer.js
+
+The React reconciler backend.
+
+Look at Backend.js createViewInstance() and ViewManager.
+--

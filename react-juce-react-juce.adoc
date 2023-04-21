@@ -198,15 +198,14 @@ EventEmitter is a JS module. Obtained from npm.
 
 [.notes]
 --
-View.js, View.h, View.cpp
+View.js, View.h, View.cpp, Backend.js
 
 Let's have a look at a couple of components under the bonnet.
 
 Note that View introduces a set of properties.
 
-In implementation, look at mouse event handling and explain onMeasure.
-
-If anyone asks, show Backend.js and dispatchViewEvent handling.
+In implementation, look at mouse event handling, dispatchViewEvent and
+explain onMeasure.
 --
 
 == Canvas component
